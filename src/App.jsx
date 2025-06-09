@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Billboard,
   Environment,
@@ -101,7 +103,7 @@ class ToonMaterial extends CSM {
 }
 
 function Thing() {
-  const { scene } = useGLTF("/monkeys.glb");
+  const { scene } = useGLTF("/demo-2023-toon-shader/monkeys.glb");
   const material = useMemo(() => new ToonMaterial(), []);
 
   const [steps, setSteps] = useState([
@@ -187,7 +189,7 @@ export default function App() {
         <Environment
           background
           blur={0.05}
-          files="/table_mountain_2_puresky_1k.hdr"
+          files={"/demo-2023-toon-shader/table_mountain_2_puresky_1k.hdr"}
         />
         <Thing />
       </Canvas>
