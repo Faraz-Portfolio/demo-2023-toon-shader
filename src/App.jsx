@@ -13,7 +13,6 @@ import { folder, Leva, useControls } from "leva";
 import { useEffect, useLayoutEffect, useMemo, useState } from "react";
 import * as THREE from "three";
 import CSM from "three-custom-shader-material/vanilla";
-import "./styles.css";
 
 class ToonMaterial extends CSM {
   constructor() {
@@ -193,7 +192,12 @@ export default function App() {
         <Thing />
       </Canvas>
 
-      <Leva collapsed />
+      <Leva
+        collapsed
+        titleBar={{
+          title: "Options",
+        }}
+      />
     </>
   );
 }
