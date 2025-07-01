@@ -1,8 +1,7 @@
-# React + Vite
+# Toon Shader
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+View Live: https://farazzshaikh.com/demos/demo-2023-toon-shader
 
-Currently, two official plugins are available:
+[2025-06-17 14-20-44.webm](https://github.com/user-attachments/assets/55aa3ea5-ef19-4565-ab68-6798fad7c426)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A Blender inspired Toon Shader. Was attempting to replicate Blender's Color Ramp node in ThreeJS. 
