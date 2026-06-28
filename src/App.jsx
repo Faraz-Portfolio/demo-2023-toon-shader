@@ -93,15 +93,17 @@ class ToonMaterial extends CSM {
     const texture = new THREE.DataTexture(
       new Uint8Array(arr), //
       256,
-      1
+      1,
     );
     texture.needsUpdate = true;
     return texture;
   }
 }
 
+const baseUrl = import.meta.env.BASE_URL;
+
 function Thing() {
-  const { scene } = useGLTF("/demo-2023-toon-shader/monkeys.glb");
+  const { scene } = useGLTF(baseUrl + "monkeys.glb");
   const material = useMemo(() => new ToonMaterial(), []);
 
   const [steps, setSteps] = useState([
